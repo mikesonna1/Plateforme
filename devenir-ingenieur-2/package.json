@@ -1,0 +1,16 @@
+{
+  "name": "devenir-ingenieur",
+  "version": "2.0.0",
+  "description": "Plateforme d'apprentissage de Python avec cours, vidéos, exercices corrigés automatiquement et professeur IA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "verify": "node tools/verify.js",
+    "verify:levels": "node tools/verify-levels.js",
+    "build:levels": "node tools/gen/build.js && python3 tools/gen/defis.py"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.19.2" },
+  "license": "UNLICENSED",
+  "private": true
+}
